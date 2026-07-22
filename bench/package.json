@@ -1,0 +1,20 @@
+{
+  "name": "mcpcheck-bench",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Runs mcpcheck against a set of popular MCP servers and builds a table.",
+  "dependencies": {
+    "@modelcontextprotocol/server-everything": "latest",
+    "@modelcontextprotocol/server-memory": "latest",
+    "@modelcontextprotocol/server-filesystem": "latest",
+    "@modelcontextprotocol/server-sequential-thinking": "latest",
+    "@modelcontextprotocol/server-everart": "latest",
+    "@modelcontextprotocol/server-github": "latest",
+    "@modelcontextprotocol/server-brave-search": "latest",
+    "@modelcontextprotocol/server-slack": "latest",
+    "@modelcontextprotocol/server-gitlab": "latest",
+    "@modelcontextprotocol/server-google-maps": "latest",
+    "mcp-server-sqlite-npx": "latest"
+  }
+}
