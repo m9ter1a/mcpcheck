@@ -41,6 +41,7 @@ mcpcheck connects as a **real MCP client** (stdio or streamable HTTP), introspec
 ## Usage
 
 ```bash
+mcpcheck --help                       # list every command and flag
 mcpcheck ./server.js                  # spawn `node ./server.js` over stdio
 mcpcheck "python server.py --stdio"   # any command
 mcpcheck -- python server.py --stdio  # explicit command passthrough
