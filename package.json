@@ -1,10 +1,13 @@
 {
-  "name": "mcpcheck",
+  "name": "@m9ter1a/mcpcheck",
   "version": "0.1.0",
   "description": "Audit any MCP server for agent ergonomics: get a 0-100 score and a list of what breaks for the agent.",
   "type": "module",
   "bin": {
     "mcpcheck": "dist/cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "dist"

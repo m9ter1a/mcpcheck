@@ -3,8 +3,10 @@
 **Audit any MCP server for agent ergonomics — one command, a 0–100 score, and a list of what breaks for the agent.**
 
 ```bash
-npx mcpcheck ./server.js
+npx @m9ter1a/mcpcheck ./server.js
 ```
+
+> Installed globally (`npm i -g @m9ter1a/mcpcheck`), the command is simply `mcpcheck`. The examples below use that short form.
 
 ```
   mcpcheck  ./server.js
@@ -108,7 +110,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
       - run: npm ci && npm run build   # build your server first
-      - run: npx mcpcheck ./dist/server.js --min-score 80
+      - run: npx @m9ter1a/mcpcheck ./dist/server.js --min-score 80
 ```
 
 ## Development
