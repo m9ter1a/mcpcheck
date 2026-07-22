@@ -4,6 +4,8 @@
 npx @m9ter1a/mcpcheck ./server.js
 ```
 
+> `./server.js` is a placeholder — replace it with the path, command, or URL of a real MCP server. Point it at nothing and you'll get `F` / `0`, because there was no server to connect to. New here? Run `npx @m9ter1a/mcpcheck --help` first.
+
 **Audit any MCP server for agent ergonomics — one command, a 0–100 score, and a list of what breaks for the agent.**
 
 > Installed globally (`npm i -g @m9ter1a/mcpcheck`), the command is simply `mcpcheck`. The examples below use that short form.
