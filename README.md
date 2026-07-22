@@ -1,10 +1,10 @@
 # mcpcheck
 
-**Audit any MCP server for agent ergonomics — one command, a 0–100 score, and a list of what breaks for the agent.**
-
 ```bash
 npx @m9ter1a/mcpcheck ./server.js
 ```
+
+**Audit any MCP server for agent ergonomics — one command, a 0–100 score, and a list of what breaks for the agent.**
 
 > Installed globally (`npm i -g @m9ter1a/mcpcheck`), the command is simply `mcpcheck`. The examples below use that short form.
 
