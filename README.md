@@ -125,6 +125,12 @@ npm run bench      # score a set of popular MCP servers (writes bench/RESULTS.md
 CI runs the test suite on Linux, macOS, and Windows (Node 20 & 22) via
 `.github/workflows/ci.yml`.
 
+## Security & privacy
+
+- **Runs locally, phones nobody.** mcpcheck makes no network calls except to the MCP server you point it at. No telemetry, no analytics — none of your (or your server's) data is sent anywhere else.
+- **Its output can quote server responses.** The probe checks call read-only tools and may surface snippets of what a server returns, including any secrets it flags as leaking. Treat `--json` / `--markdown` output as potentially sensitive and review it before pasting into public CI logs or pull requests.
+- **Probes are read-only by default.** Only tools marked `readOnlyHint: true` are called unless you pass `--allow-write`. Auditing a server also means running its code, so only point mcpcheck at servers you trust.
+
 ## Notes & limitations
 
 - **Token counts are estimates** (~4 chars/token). They are meant to *flag* budget problems, not to bill you — and mcpcheck stays zero-config and zero-API-key as a result.
