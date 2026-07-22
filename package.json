@@ -28,6 +28,15 @@
     "ci"
   ],
   "license": "MIT",
+  "author": "m9ter1a (https://github.com/m9ter1a)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m9ter1a/mcpcheck.git"
+  },
+  "homepage": "https://github.com/m9ter1a/mcpcheck#readme",
+  "bugs": {
+    "url": "https://github.com/m9ter1a/mcpcheck/issues"
+  },
   "engines": {
     "node": ">=18"
   },
