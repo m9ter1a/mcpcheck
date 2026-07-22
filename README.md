@@ -88,6 +88,8 @@ Exit code is non-zero when the server fails to connect, has any `error`-level fi
 
 Each category is scored 0–100 (errors cost the most, then warnings, then info). The overall score is a weighted average mapped to a letter grade (A ≥ 90, B ≥ 80, C ≥ 70, D ≥ 60, F otherwise). Categories that don't apply to a server (e.g. no tools) are dropped and the weights renormalised.
 
+By default the score includes the dynamic **Probes** category. Running with `--no-probes` drops it and scores on static analysis only, so the number will differ — expect the two modes to disagree on the same server.
+
 ## Badge
 
 Every run prints a badge snippet for your README:
